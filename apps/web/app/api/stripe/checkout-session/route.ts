@@ -1,6 +1,6 @@
 import { SERVER_ENV } from 'app/env/server-env'
 import { PUBLIC_ENV } from 'app/env/public-env'
-import { stripe } from '../stripe'
+import { getStripe } from '../stripe'
 
 export async function POST(req: Request) {
   // 👋 in production, you should associate this request with a customer
@@ -9,6 +9,7 @@ export async function POST(req: Request) {
   // const customerId = user.stripeCustomerID
 
   const priceId = SERVER_ENV.STRIPE_PRICE_ID
+  const stripe = getStripe()
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],

@@ -1,10 +1,12 @@
-import { stripe } from '../stripe'
+import { SERVER_ENV } from 'app/env/server-env'
+import { getStripe } from '../stripe'
 
 export async function POST(req: Request) {
   let data
   let eventType
+  const stripe = getStripe()
   // Check if webhook signing is configured.
-  const webhookSecret = '{{STRIPE_WEBHOOK_SECRET}}'
+  const webhookSecret = SERVER_ENV.STRIPE_WEBHOOK_SECRET
   let event:
     | Awaited<ReturnType<typeof stripe.webhooks.constructEvent>>
     | undefined
