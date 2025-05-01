@@ -18,11 +18,7 @@ export function HomeScreen() {
       <Text
         style={{ fontSize: 16, fontWeight: 'bold', color: 'blue' }}
         onPress={async () => {
-          const protocol = PUBLIC_ENV.APP_URL.startsWith('localhost')
-            ? 'http'
-            : 'https'
-          const requestUrl = `${protocol}://${PUBLIC_ENV.APP_URL}/api/stripe/checkout-session`
-          const session: { url: string } = await fetch(requestUrl, {
+          const session = await fetch(PUBLIC_ENV.STRIPE_CHECKOUT_URL, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
