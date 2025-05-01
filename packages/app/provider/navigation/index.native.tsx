@@ -21,8 +21,8 @@ export function NavigationProvider({
             initialRouteName: 'home',
             screens: {
               home: '',
-              'checkout-success': 'checkout-success',
-              'checkout-cancel': 'checkout-cancel',
+              'checkout-success': 'checkout_redirect/success',
+              'checkout-cancel': 'checkout_redirect/cancel',
             },
           },
         }),
