@@ -3,4 +3,5 @@ export const SERVER_ENV = {
   APPLE_TEAM_ID: process.env.APPLE_TEAM_ID!,
   STRIPE_PRODUCT_ID: process.env.STRIPE_PRODUCT_ID!,
   STRIPE_PRICE_ID: process.env.STRIPE_PRICE_ID!,
+  STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET!,
 }
