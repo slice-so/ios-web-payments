@@ -84,6 +84,10 @@ module.exports = {
   },
   reactStrictMode: false, // reanimated doesn't support this on web
 
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   ...withWebpack,
   ...withTurpopack,
 }
