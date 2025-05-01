@@ -1,0 +1,6 @@
+export const SERVER_ENV = {
+  STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY!,
+  APPLE_TEAM_ID: process.env.APPLE_TEAM_ID!,
+  STRIPE_PRODUCT_ID: process.env.STRIPE_PRODUCT_ID!,
+  STRIPE_PRICE_ID: process.env.STRIPE_PRICE_ID!,
+}

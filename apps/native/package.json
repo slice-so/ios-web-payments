@@ -4,7 +4,7 @@
     "expo": "52.0.38",
     "expo-image": "~2.0.6",
     "expo-linear-gradient": "~14.0.2",
-    "expo-linking": "~7.0.5",
+    "expo-linking": "^7.1.4",
     "expo-splash-screen": "~0.29.22",
     "expo-status-bar": "~2.0.1",
     "moti": "^0.30.0",
