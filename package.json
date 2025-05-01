@@ -12,15 +12,15 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "native": "cd apps/expo && yarn start",
-    "web": "cd apps/next && yarn next"
+    "native": "cd apps/native && yarn start",
+    "web": "cd apps/web && yarn next"
   },
   "packageManager": "yarn@4.7.0",
   "eslintConfig": {
     "extends": "next",
     "settings": {
       "next": {
-        "rootDir": "apps/next/"
+        "rootDir": "apps/web/"
       }
     },
     "root": true
