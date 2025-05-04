@@ -12,7 +12,7 @@ Even though you're redirecting users to Web to complete their purchase, **Apple 
 
 ## 🔦 About
 
-This monorepo implemented `npx create-solito-app@latest`.
+This monorepo implemented `bunx create-solito-app@latest`.
 
 ## 📦 Included packages
 
@@ -45,16 +45,16 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 ## 🏁 Start the app
 
-- Install dependencies: `yarn`
+- Install dependencies: `bun`
 
-- Next.js local dev: `yarn web`
-  - Runs `yarn next` in `apps/web`
+- Next.js local dev: `bun web`
+  - Runs `bun next` in `apps/web`
 - Expo local dev:
   - First, build a dev client onto your device or simulator
     - `cd apps/native`
-    - Then, either `npx expo run:ios`
+    - Then, either `bunx expo run:ios`
   - After building the dev client, from the root of the monorepo...
-    - `yarn native` (This runs `npx expo start --dev-client`)
+    - `bun native` (This runs `bunx expo start --dev-client`)
 
 ## 🎙 About Solito
 

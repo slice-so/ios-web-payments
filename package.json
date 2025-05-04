@@ -12,10 +12,9 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "native": "cd apps/native && yarn start",
-    "web": "cd apps/web && yarn next"
+    "native": "cd apps/native && bun start",
+    "web": "cd apps/web && bun next"
   },
-  "packageManager": "yarn@4.7.0",
   "eslintConfig": {
     "extends": "next",
     "settings": {
