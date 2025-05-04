@@ -28,6 +28,8 @@ export async function POST(req: Request) {
   const priceId = SERVER_ENV.STRIPE_PRICE_ID
   const stripe = getStripe()
 
+  // This is the URL that the user will be redirected to checkout
+  // We need to replace this with a slice URL
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
